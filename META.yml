@@ -15,17 +15,20 @@ name: SOAP-Transport-MQ
 provides:
   SOAP::Transport::MQ:
     file: lib/SOAP/Transport/MQ.pm
-    version: 0.711
+    version: 0.712
   SOAP::Transport::MQ::Client:
     file: lib/SOAP/Transport/MQ.pm
+    version: 0.712
   SOAP::Transport::MQ::Server:
     file: lib/SOAP/Transport/MQ.pm
+    version: 0.712
   URI::mq:
     file: lib/SOAP/Transport/MQ.pm
+    version: 0.712
 requires:
   MQSeries: 0
   SOAP::Lite: 0.711
   perl: v5.6.0
 resources:
   license: http://www.perlfoundation.org/artistic_license_1_0
-version: 0.711
+version: 0.712

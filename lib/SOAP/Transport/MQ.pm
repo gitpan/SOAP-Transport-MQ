@@ -12,7 +12,7 @@ package SOAP::Transport::MQ;
 
 use strict;
 use warnings;
-our $VERSION = 0.711;
+our $VERSION = 0.712;
 
 use MQClient::MQSeries;
 use MQSeries::QueueManager;
@@ -46,6 +46,7 @@ sub replyqueue {
 # ======================================================================
 
 package URI::mq;    # ok, lets do 'mq://' scheme
+our $VERSION = 0.712;
 require URI::_server;
 require URI::_userpass;
 
@@ -57,7 +58,7 @@ require URI::_userpass;
 # ======================================================================
 
 package SOAP::Transport::MQ::Client;
-
+our $VERSION = 0.712;
 use vars qw(@ISA);
 @ISA = qw(SOAP::Client SOAP::Transport::MQ);
 
@@ -188,7 +189,7 @@ sub send_receive {
 # ======================================================================
 
 package SOAP::Transport::MQ::Server;
-
+our $VERSION = 0.712;
 use Carp ();
 use vars qw(@ISA $AUTOLOAD);
 @ISA = qw(SOAP::Server SOAP::Transport::MQ);
